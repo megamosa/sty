@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="change_status_preparingb">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">change_status_preparingb</item>
+                        <item name="label" xsi:type="string" translate="true">طباعة</item>
+                        <item name="url" xsi:type="url" path="magoarab_mass/order/massChangeStatus">
+                            <param name="status">preparingb</param>
+                        </item>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">تغيير حالة الطلب</item>
+                            <item name="message" xsi:type="string" translate="true">هل أنت متأكد أنك تريد تغيير حالة الطلبات المحددة إلى طباعة؟</item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+            <action name="change_status_preparinga">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">change_status_preparinga</item>
+                        <item name="label" xsi:type="string" translate="true">جاري الشحن</item>
+                        <item name="url" xsi:type="url" path="magoarab_mass/order/massChangeStatus">
+                            <param name="status">preparinga</param>
+                        </item>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">تغيير حالة الطلب</item>
+                            <item name="message" xsi:type="string" translate="true">هل أنت متأكد أنك تريد تغيير حالة الطلبات المحددة إلى جاري الشحن؟</item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+            <action name="change_status_deliveredtodayc">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">change_status_deliveredtodayc</item>
+                        <item name="label" xsi:type="string" translate="true">تم الشحن اليوم</item>
+                        <item name="url" xsi:type="url" path="magoarab_mass/order/massChangeStatus">
+                            <param name="status">deliveredtodayc</param>
+                        </item>
+                        <item name="confirm" xsi:type="array">
+                            <item name="title" xsi:type="string" translate="true">تغيير حالة الطلب</item>
+                            <item name="message" xsi:type="string" translate="true">هل أنت متأكد أنك تريد تغيير حالة الطلبات المحددة إلى تم الشحن اليوم؟</item>
+                        </item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>
